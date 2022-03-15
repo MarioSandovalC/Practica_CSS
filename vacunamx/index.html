@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Preload" href="css/normalize.css" as="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="Preload" href="css/style.css" as="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5a28ddba4b.js" crossorigin="anonymous"></script>
+    <title>Vacunacion CDMX</title>
+</head>
+<body>
+    <header>
+        <div class="barra">
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            <nav class="barra__navegacion">
+                <a class="barra__navegacion--enlace" href="#">Vacunas</a>
+                <a class="barra__navegacion--enlace" href="#">Nosotros</a>
+                <a class="barra__navegacion--enlace" href="#">Responsabilidad</a>
+                <a class="barra__navegacion--enlace" href="#">Regístrate</a>
+            </nav>
+        </div>
+        <div class="header">
+            <div class="info">
+                <div class="info__hero">
+                    <h1>Fight Virus <br> With Vaccines</h1>
+                    <p>Detengamos esta pandemia destruyendo los virus con una vacuna, no permitas que tu y tu familia se infecten.</p>
+                    <div class="info__hero--data">
+                        <p><i class="fa-solid fa-shield"></i> La mejor Protección</p>
+                        <p><i class="fa-solid fa-star"></i> Las mejores vacunas</p>
+                    </div>
+                </div>
+                <div class="info__schedule">
+                    <p class="info__schedule--title"><i class="fa-solid fa-clock"></i> Registra tu vacunación</p>
+                    <label class="info__schedule--place" for="place"><i class="fa-solid fa-location-dot"></i> Lugar</label>
+                    <select class="info__schedule--iplace" name="place" id="place">
+                        <option value="ags">Aguascalientes</option>
+                        <option value="bc">Baja California</option>
+                        <option value="camp">Campeche</option>
+                        <option value="coah">Coahuila</option>
+                        <option value="col">Colima</option>
+                    </select>
+                    <label class="info__schedule--date" for="fecha"><i class="fa-solid fa-calendar-days"></i> Fecha</label>
+                    <input class="date" type="date" id="fecha">
+                    <label class="info__schedule--vaccine" for="vaccine"><i class="fa-solid fa-pen-to-square"></i> Vacuna</label>
+                    <select class="info__schedule--ivaccine" name="vaccine" id="vaccine">
+                        <option value="pfizer">Pfizer-BioNTech</option>
+                        <option value="cansino">Cansino</option>
+                        <option value="covax">COVAX</option>
+                        <option value="astrazeneca">Astra Zeneca</option>
+                        <option value="sputnikv">Sputnik V</option>
+                        <option value="sinovac">Sinovac</option>
+                        <option value="janssen">Janssen</option>
+                        <option value="moderna">Moderna</option>
+                    </select>
+                    <input class="info__schedule--reg btn" type="button" value="Resgistrar">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <!-- <header>
+        <div class="header">
+            <div class="header__barra">
+            </div>
+            <div class="header__info">
+                <h2>Fight Virus <br> With Vaccines</h2>
+                <p>Detengamos esta pandemia destruyendo los virus con una vacuna, no permitas que tu y tu familia se infecten.</p>
+                <p class="header__info--icons"><i class="fa-solid fa-shield"></i> La mejor Protección</p>
+                <p class="header__info--icons"><i class="fa-solid fa-star"></i> Las mejores vacunas</p>
+            </div>
+            <div class="header__dates">
+                <p class="header__dates--title"><i class="fa-solid fa-clock"></i> Registra tu vacunación</p>
+                <label class="header__dates--label1" for="place"><i class="fa-solid fa-location-dot"></i> Lugar</label>
+                <select class="header__dates--input1" name="place" id="place">
+                    <option value="ags">Aguascalientes</option>
+                    <option value="bc">Baja California</option>
+                    <option value="camp">Campeche</option>
+                    <option value="coah">Coahuila</option>
+                    <option value="col">Colima</option>
+                    <option value="chis">Chiapas</option>
+                    <option value="shih">Chihuahua</option>
+                    <option value="cdmx" selected>Ciudad de México</option>
+                    <option value="dgo">Durango</option>
+                    <option value="gto">Guanajuato</option>
+                    <option value="gro">Guerrero</option>
+                    <option value="hgo">Hidalgo</option>
+                    <option value="jal">Jalisco</option>
+                    <option value="mex">Mexico</option>
+                    <option value="mich">Michoacán</option>
+                    <option value="mor">Morelos</option>
+                    <option value="nay">Nayarit</option>
+                    <option value="nl">Nuevo León</option>
+                    <option value="oax">Oaxaca</option>
+                    <option value="pue">puebla</option>
+                    <option value="qro">Querétaro</option>
+                    <option value="qr">Quintana Roo</option>
+                    <option value="slp">San Luis potosí</option>
+                    <option value="sin">Sinaloa</option>
+                    <option value="son">Sonora</option>
+                    <option value="tab">Tabasco</option>
+                    <option value="tams">Tamaulipas</option>
+                    <option value="tlax">Tlaxcala</option>
+                    <option value="ver">Veracruz</option>
+                    <option value="yuc">Yucatán</option>
+                    <option value="zac">Zacatecas</option>
+                </select>
+                <label class="header__dates--label2" for="fecha"><i class="fa-solid fa-calendar-days"></i> Fecha</label>
+                <input class="header__dates--input2" type="date" id="fecha">
+                <label class="header__dates--label3" for="vaccine"><i class="fa-solid fa-pen-to-square"></i> Vacuna</label>
+                <select class="header__dates--input3" name="vaccine" id="vaccine">
+                    <option value="pfizer">Pfizer-BioNTech</option>
+                    <option value="cansino">Cansino</option>
+                    <option value="covax">COVAX</option>
+                    <option value="astrazeneca">Astra Zeneca</option>
+                    <option value="sputnikv">Sputnik V</option>
+                    <option value="sinovac">Sinovac</option>
+                    <option value="janssen">Janssen</option>
+                    <option value="moderna">Moderna</option>
+                </select>
+                <input class="header__dates--button btn" type="button" value="Resgistrar">
+            </div>
+        </div>
+    </header> -->
+    <section class="contenedor">
+            <div class="brands">
+                <img src="img/astra.png" alt="pfizer">
+                <img src="img/sinovac.png" alt="sinovac">
+                <img src="img/pfizer.png" alt="pfizer">
+                <img src="img/moderna.png" alt="moderna">
+            </div>
+    </section>
+    <section class="contenedor">
+        <div class="vacc">
+            <div class="vacc__text">
+                <h2>¿Por qué debo vacunarme?</h2>
+                <p>Para brindarle más información acerca de la vacunación contra el COVID-19, presentamos los siguientes beneficios.</p>
+            </div>
+            <div class="vacc__figure1"></div>
+        </div>
+    </section>
+    <section class="contenedor">
+        <div class="benefits"> 
+            <div class="benefits__info">
+                <i class="fa-solid fa-list"></i>
+                <h2>Minimizar los contagios</h2>
+                <p>El objetivo de la vacunación es evitar más contagios.</p>
+            </div>   
+            <div class="benefits__info shadow">
+                <i class="fa-solid fa-shield-blank"></i>
+                <h2>Creación de Anticuerpos</h2>
+                <p>Las vacunas de COVID-19 te ayudan a crear anticuerpos contra este virus.</p>
+            </div>   
+            <div class="benefits__info">
+                <i class="fa-solid fa-users"></i>
+                <h2>Proteger a las Personas Cercanas</h2>
+                <p>Al vacunarte ayudas a proteger a tu familia y amigos.</p>
+            </div>
+            <div class="benefits__info">
+                <i class="fa-solid fa-layer-group"></i>
+                <h2>Crear un grupo de inmunidad</h2>
+                <p>Ayudas a tu comunidad y amigos a crear nmunidad colectiva</p>
+            </div>  
+        </div>
+    </section>
+    <section class="contenedor">
+        <div class="vacc">
+            <div class="vacc__figure2"></div>
+            <div class="vacc__text">
+                <h2>Recomendaciones antes de vacunarse</h2>
+                <p>La eficacia de la vacuna esta fuertemente influenciada por que tan fuerte es nuesto sistema inmunologico. por lo tanto, hay ciertas aspectos a tomar en cuenta.
+                </p>
+            </div>
+        </div>
+        <div class="recom">
+            <div class="recom__color">
+                <div class="recom__image"></div>
+            </div>
+            <div class="recom__list">
+                <div class="recom__list--element">
+                    <input class="recom__list--check" type="checkbox" id="beverages" checked>
+                    <label class="recom__list--label shadow" for="beverages"><i class="fa-solid fa-ban"></i> Evita Bebidas Alcohólicas.</label>
+                    <p class="expand_beverages" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquam libero nec metus porttitor, ac pretium nibh efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur eleifend tincidunt felis nec bibendum. Pellentesque volutpat orci a leo eleifend gravida. Suspendisse potenti. Aliquam scelerisque metus vitae neque blandit facilisis. </p>
+                </div>
+                <div class="recom__list--element">
+                    <input class="recom__list--check" class="" type="checkbox" id="stress">
+                    <label class="recom__list--label shadow" for="stress"><i class="fa-solid fa-ban"></i> Evita Situaciones de Estres</label>
+                    <p class="expand_stress" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquam libero nec metus porttitor, ac pretium nibh efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur eleifend tincidunt felis nec bibendum. Pellentesque volutpat orci a leo eleifend gravida. Suspendisse potenti. Aliquam scelerisque metus vitae neque blandit facilisis. </p>
+                </div>
+                <div class="recom__list--element">
+                    <input class="recom__list--check" type="checkbox" id="food">
+                    <label class="recom__list--label shadow" for="food"><i class="fa-solid fa-carrot"></i> Aliméntate Sanamente</label>
+                    <p class="expand_food" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquam libero nec metus porttitor, ac pretium nibh efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur eleifend tincidunt felis nec bibendum. Pellentesque volutpat orci a leo eleifend gravida. Suspendisse potenti. Aliquam scelerisque metus vitae neque blandit facilisis. </p>
+                </div>
+                <div class="recom__list--element">
+                    <input class="recom__list--check" type="checkbox" id="sleep">
+                    <label class="recom__list--label shadow" for="sleep"><i class="fa-solid fa-bed"></i> Duerme Adecuadamente</label>
+                    <p class="expand_sleep" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquam libero nec metus porttitor, ac pretium nibh efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur eleifend tincidunt felis nec bibendum. Pellentesque volutpat orci a leo eleifend gravida. Suspendisse potenti. Aliquam scelerisque metus vitae neque blandit facilisis. </p>
+                </div>
+                <div class="recom__list--element">
+                    <input class="recom__list--check" type="checkbox" id="excer">
+                    <label class="recom__list--label shadow" for="excer"><i class="fa-solid fa-dumbbell"></i> Ejercita tu cuerpro</label>
+                    <p class="expand_excer" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquam libero nec metus porttitor, ac pretium nibh efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur eleifend tincidunt felis nec bibendum. Pellentesque volutpat orci a leo eleifend gravida. Suspendisse potenti. Aliquam scelerisque metus vitae neque blandit facilisis. </p>
+                </div>
+            </div>
+        </div>
+        <div class="vacc">
+            <div class="vacc__text">
+                <h2>Emergencias</h2>
+                <p>Contáctanos en alguno de los siguientes medios si tu o algún familiar se encuentra mal o bien si tiene alguno de los síntomas de COVID-19</p>
+            </div>
+            <div class="vacc__figure1"></div>
+        </div>
+    </section>
+    <section class="contenedor">
+        <div class="contact">
+            <div class="contact__color">
+                <div class="contact__image"><img src="img/nurse2.png" alt="nurse2"></div>
+            </div>
+            <div class="contact__ways">
+                <div class="contact__ways--element">
+                    <h2><i class="fa-solid fa-phone-volume"></i> Telefono</h2>
+                    <p>555-544-3322</p>
+                    <p class="btn">Llamar</p>
+                </div>
+                <div class="contact__ways--element">
+                    <h2><i class="fa-regular fa-comment-dots"></i> Chat</h2>
+                    <p>555-544-3322</p>
+                    <p class="btn">Chatear</p>
+                </div>
+                <div class="contact__ways--element">
+                    <h2><i class="fa-solid fa-video"></i> Video Llamada</h2>
+                    <p>555-544-3322</p>
+                    <p class="btn">Llamar</p>
+                </div>
+                <div class="contact__ways--element">
+                    <h2><i class="fa-solid fa-envelope"></i> Mensaje</h2>
+                    <p>555-544-3322</p>
+                    <p class="btn">Enviar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="footer__info">
+                <img src="img/logo.png" alt="">
+                <p>Nuestro objetivo es ayudar México <br> a superar esta pandemia</p>
+            </div>
+            <div class="footer__info">
+                <h2 class="footer__info--enlace">Nosotros</h2>
+                <a class="footer__info--enlace" href="#">About Us</a>
+                <a class="footer__info--enlace" href="#">Features</a>
+                <a class="footer__info--enlace" href="#">News & Blogs</a>
+            </div>
+            <div class="footer__info">
+                <h2>Empresa</h2>
+                <a class="footer__info--enlace" href="#">¿Cómo Trabajamos?</a>
+                <a class="footer__info--enlace" href="#">Seguridad</a>
+                <a class="footer__info--enlace" href="#">Ubicación</a>
+            </div>
+            <div class="footer__info">
+                <h2>Soporte</h2>
+                <a class="footer__info--enlace" href="#">Preguntas Frecuentes</a>
+                <a class="footer__info--enlace" href="#">Centro de Ayuda</a>
+                <a class="footer__info--enlace" href="#">Contáctanos</a>
+            </div>
+        </div>
+        <div class="terminos">
+            <div class="terminos__leyenda">
+                <p>Derechos Reservador MiVacuna 2022</p>
+                <nav>
+                    <a class="terminos__leyenda--enlace" href="#">Términos y Condiciones</a>
+                    <a class="terminos__leyenda--enlace" href="#">Politica de Privacidad</a>
+                </nav>
+            </div>
+            <p></p>
+        </div>
+    </footer>
+</body>
+</html>
